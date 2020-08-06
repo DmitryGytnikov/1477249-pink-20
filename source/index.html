@@ -8,9 +8,6 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
-      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visualli-hidden">Открыть меню</span>
@@ -37,6 +34,9 @@
             </a>
           </li>
         </ul>
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
+        </a>
       </nav>
     </div>
   </header>
@@ -45,98 +45,104 @@
       <h1 class="visualli-hidden">Приложение Pink</h1>
       <div class="title">
         <p class="title__text">Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Приложение Pink">
         <div class="title__download download">
           <h2 class="visualli-hidden">Скачать приложение Pink</h2>
-          <button class="download__btn button" type="button">Скачать приложение</button>
+          <a class="download__btn" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
+            Скачать приложение
+          </a>
           <ul class="download__list">
             <li class="download__item">
-              <span class="visually-hidden">"Эйпл"</span>
-              <!-- <svg></svg> -->
+              <a class="download__link" href="https://www.apple.com/ru/" target="_blank">
+                <span class="visually-hidden">"Эйпл"</span>
+                <!-- <svg></svg> -->
+              </a>
             </li>
             <li class="download__item">
+             <a class="download__link" href="https://www.android.com" target="_blank">
               <span class="visually-hidden">"Андроид"</span>
               <!-- <svg></svg> -->
-            </li>
-            <li class="download__item">
-              <span class="visually-hidden">"Виндоус"</span>
-              <!-- <svg></svg> -->
-            </li>
-          </ul>
-          <p class="download__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </div>
-      <section class="advanteges">
-        <h2 class="visualli-hidden">Преимущества Pink</h2>
-        <div class="advanteges__intro">
-          <p class="advanteges__text">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="advanteges__text">
-            Нам есть, что вам предложить!
-          </p>
-        </div>
-        <ul class="advanteges__list">
-          <li class="advanteges__item">
-            <h3 class="advanteges__title">
-              Поднимает настроение
-            </h3>
-            <p class="advanteges__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
+            </a>
           </li>
-          <li class="advanteges__item">
-            <h3 class="advanteges__title">
-              Меняет мир вокруг
-            </h3>
-            <p class="advanteges__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="advanteges__item">
-            <h3 class="advanteges__title">
-              Заводит новых друзей
-            </h3>
-            <p class="advanteges__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <p class="advanteges__image advanteges__image--bottom">
-          <img src="https://via.placeholder.com/157x320" width="157" height="320" alt="Приложение Pink">
+          <li class="download__item">
+           <a class="download__link" href="https://www.microsoft.com/ru-ru/windows" target="_blank">
+            <span class="visually-hidden">"Виндоус"</span>
+            <!-- <svg></svg> -->
+          </a>
+        </li>
+      </ul>
+      <p class="download__text">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </div>
+  </div>
+  <section class="advanteges">
+    <h2 class="visualli-hidden">Преимущества Pink</h2>
+    <div class="advanteges__intro">
+      <p class="advanteges__text">
+        Устали от серости мегаполиса?
+      </p>
+      <p class="advanteges__text">
+        Нам есть, что вам предложить!
+      </p>
+    </div>
+    <ul class="advanteges__list">
+      <li class="advanteges__item">
+        <h3 class="advanteges__title">
+          Поднимает настроение
+        </h3>
+        <p class="advanteges__description">
+          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
         </p>
-      </section>
+      </li>
+      <li class="advanteges__item">
+        <h3 class="advanteges__title">
+          Меняет мир вокруг
+        </h3>
+        <p class="advanteges__description">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </p>
+      </li>
+      <li class="advanteges__item">
+        <h3 class="advanteges__title">
+          Заводит новых друзей
+        </h3>
+        <p class="advanteges__description">
+          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+      </li>
+    </ul>
+    <p class="advanteges__image advanteges__image--bottom">
+    </p>
+  </section>
+</div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo">
+      <img src="https://via.placeholder.com/144x40" width="144" height="40" alt="Логотип Pink">
+    </a>
+    <div class="page-footer__social social">
+      <h2 class="visually-hidden">Ссылки на соцсети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" target="_blank">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" target="_blank">Мы в Ютубе</a>
+        </li>
+      </ul>
     </div>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/144x40" width="144" height="40" alt="Логотип Pink">
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип htmlacademy">
       </a>
-      <div class="page-footer__social social">
-        <h2 class="visually-hidden">Ссылки на соцсети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" target="_blank">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" target="_blank">Мы в Ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип htmlacademy">
-        </a>
-      </div>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>
 

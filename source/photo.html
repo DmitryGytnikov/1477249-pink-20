@@ -8,9 +8,6 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
-      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visualli-hidden">Открыть меню</span>
@@ -37,6 +34,9 @@
             </a>
           </li>
         </ul>
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
+        </a>
       </nav>
     </div>
   </header>
@@ -54,7 +54,11 @@
             Анна<span class="best-today__time">(5 минут назад)</span>
           </h2>
           <p class="best-today__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="best-today__like">Нравится:215</p>
+          <div class="best-today__like like-block">
+            <button class="like-block__btn like-block__btn--right" type="button" aria-label="Нравится"></button>
+            <span class="like-block__text">Нравится:215</span>
+            <button class="like-block__btn like-block__btn--left" type="button" aria-label="Нравится"></button>
+          </div>
         </div>
       </div>
       <div class="page-main__wrapper">
@@ -67,7 +71,11 @@
               Левон<span class="photo-block__time">(5 часов назад)</span>
             </h2>
             <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-block__like">Нравится:356</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:356</span>
+              <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+            </div>
           </li>
           <li class="photo__item photo-block">
             <p class="photo-block__photo">
@@ -77,7 +85,11 @@
               Антон<span class="photo-block__time">(12 часов назад)</span>
             </h2>
             <p class="photo-block__text">Соседи будут рады!</p>
-            <p class="photo-block__like">Нравится:666</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:666</span>
+              <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+            </div>
           </li>
           <li class="photo__item photo-block">
             <p class="photo-block__photo">
@@ -87,9 +99,13 @@
              Борис<span class="photo-block__time">(20 часов назад)</span>
            </h2>
            <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-           <p class="photo-block__like">Нравится:215</p>
-         </li>
-         <li class="photo__item photo-block">
+           <div class="photo-block___like like-box">
+            <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+            <span class="like-box__text">Нравится:215</span>
+            <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+          </div>
+        </li>
+        <li class="photo__item photo-block">
           <p class="photo-block__photo">
             <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
           </p>
@@ -98,16 +114,24 @@
            <span class="photo-block__time">(25 часов назад)</span>
          </h2>
          <p class="photo-block__text">Самая кубанская в мире!</p>
-         <p class="photo-block__like">Нравится:4</p>
-       </li>
-       <li class="photo__item photo-block">
+         <div class="photo-block___like like-box">
+          <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+          <span class="like-box__text">Нравится:4</span>
+          <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+        </div>
+      </li>
+      <li class="photo__item photo-block">
         <p class="photo-block__photo">
           <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></p>
           <h2 class="photo-block__author">
             Максим<span class="photo-block__time">(40 часов назад)</span>
           </h2>
           <p class="photo-block__text">Где снег-то?</p>
-          <p class="photo-block__like">Нравится:150</p>
+          <div class="photo-block___like like-box">
+            <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+            <span class="like-box__text">Нравится:150</span>
+            <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+          </div>
         </li>
         <li class="photo__item photo-block">
           <p class="photo-block__photo">
@@ -117,7 +141,11 @@
             Надежда<span class="photo-block__time">(45 часов назад)</span>
           </h2>
           <p class="photo-block__text">Всем GM и взаимные лайки!</p>
-          <p class="photo-block__like">Нравится: 2560</p>
+          <div class="photo-block___like like-box">
+            <button class="like-box__btn like-box__btn--right" type="button" aria-label="Нравится"></button>
+            <span class="like-box__text">Нравится:2560</span>
+            <button class="like-box__btn like-box__btn--left" type="button" aria-label="Нравится"></button>
+          </div>
         </li>
       </ul>
     </div>
@@ -144,7 +172,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип htmlacademy">
       </a>
     </div>
