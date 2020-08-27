@@ -1,1 +1,81 @@
-// Начните писать стили здесь
+/* open-sans-300 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/opensanslight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/opensanslight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+  url('../fonts/opensans.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/opensans.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-800 */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+  url('../fonts/opensansbold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/opensansbold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+body {
+  background: red;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/*Скрытые заголовки и скрытые описания ссылок*/
+@import "blocks/visually-hidden.scss";
+
+// html
+@import "blocks/page.scss";
+
+// header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+// main
+@import "blocks/page-main.scss";
+@import "blocks/title.scss";
+@import "blocks/download.scss";
+@import "blocks/advanteges.scss";
+@import "blocks/contest.scss";
+@import "blocks/photo.scss";
+@import "blocks/best-today.scss";
+@import "blocks/like-block.scss";
+@import "blocks/photo-block.scss";
+@import "blocks/like-box.scss";
+
+// footer
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+// page
+
+// page-header
+// main-nav
+// site-list
+
+// page-main
+// title         contest     photo
+// download                  best-today
+// advanteges                like-block
+//                           photo-block
+//                           like-box
+
+
+// page-footer
+// social
+// copyright
