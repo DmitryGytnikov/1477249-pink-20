@@ -1,0 +1,19 @@
+.photo-block__author {
+  margin: 0;
+
+  @include text (700, 14px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.photo-block__time {
+  @include text (300, 12px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+}
+
+.photo-block__text {
+  margin: 0;
+
+  @include text (400, 14px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}

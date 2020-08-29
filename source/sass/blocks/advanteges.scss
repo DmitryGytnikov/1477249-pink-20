@@ -1,0 +1,38 @@
+.advanteges__text {
+  margin: 0;
+
+  @include text (300, 24px, 1.2*24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+
+.advanteges__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.advanteges__title {
+  margin: 0;
+
+  @include text (700, 18px, 24px, #000000);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.advanteges__description {
+  margin: 0;
+
+  @include text (400, 14px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.advanteges__image {
+  &--bottom {
+    width: 157px;
+    height: 320px;
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

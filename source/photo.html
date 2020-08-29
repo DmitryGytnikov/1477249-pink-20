@@ -18,22 +18,22 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__link">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               HTML Academy
             </a>
           </li>
@@ -43,8 +43,8 @@
   </header>
   <main class="page-main">
     <section class="photo">
+      <h1 class="photo__title">Фотографии пользователей</h1>
       <div class="page-main__wrapper">
-        <h1 class="photo__title">Фотографии пользователей</h1>
         <p class="photo__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <div class="best-today">
@@ -94,89 +94,90 @@
               <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
             </p>
             <h2 class="photo-block__author">
-             Борис<span class="photo-block__time">(20 часов назад)</span>
-           </h2>
-           <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-           <div class="photo-block___like like-box">
-            <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-            <span class="like-box__text">Нравится:215</span>
-          </div>
-        </li>
-        <li class="photo__item photo-block">
-          <p class="photo-block__photo">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-          </p>
-          <h2 class="photo-block__author">
-           Сергей
-           <span class="photo-block__time">(25 часов назад)</span>
-         </h2>
-         <p class="photo-block__text">Самая кубанская в мире!</p>
-         <div class="photo-block___like like-box">
-          <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-          <span class="like-box__text">Нравится:4</span>
-        </div>
-      </li>
-      <li class="photo__item photo-block">
-        <p class="photo-block__photo">
-          <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></p>
-          <h2 class="photo-block__author">
-            Максим<span class="photo-block__time">(40 часов назад)</span>
-          </h2>
-          <p class="photo-block__text">Где снег-то?</p>
-          <div class="photo-block___like like-box">
-            <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-            <span class="like-box__text">Нравится:150</span>
-          </div>
-        </li>
-        <li class="photo__item photo-block">
-          <p class="photo-block__photo">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-          </p>
-          <h2 class="photo-block__author">
-            Надежда<span class="photo-block__time">(45 часов назад)</span>
-          </h2>
-          <p class="photo-block__text">Всем GM и взаимные лайки!</p>
-          <div class="photo-block___like like-box">
-            <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-            <span class="like-box__text">Нравится:2560</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/144x40" width="144" height="40" alt="Логотип Pink">
-    </a>
-    <div class="page-footer__social social">
-      <h2 class="visually-hidden">Ссылки на соцсети</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#" target="_blank">
-            <span class="visually-hidden">Мы в Твиттере</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" target="_blank">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" target="_blank">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип htmlacademy">
+              Борис<span class="photo-block__time">(20 часов назад)</span>
+            </h2>
+            <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:215</span>
+            </div>
+          </li>
+          <li class="photo__item photo-block">
+            <p class="photo-block__photo">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+            </p>
+            <h2 class="photo-block__author">
+              Сергей
+              <span class="photo-block__time">(25 часов назад)</span>
+            </h2>
+            <p class="photo-block__text">Самая кубанская в мире!</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:4</span>
+            </div>
+          </li>
+          <li class="photo__item photo-block">
+            <p class="photo-block__photo">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+            </p>
+            <h2 class="photo-block__author">
+              Максим<span class="photo-block__time">(40 часов назад)</span>
+            </h2>
+            <p class="photo-block__text">Где снег-то?</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:150</span>
+            </div>
+          </li>
+          <li class="photo__item photo-block">
+            <p class="photo-block__photo">
+              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+            </p>
+            <h2 class="photo-block__author">
+              Надежда<span class="photo-block__time">(45 часов назад)</span>
+            </h2>
+            <p class="photo-block__text">Всем GM и взаимные лайки!</p>
+            <div class="photo-block___like like-box">
+              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              <span class="like-box__text">Нравится:2560</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img src="https://via.placeholder.com/144x40" width="144" height="40" alt="Логотип Pink">
       </a>
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Ссылки на соцсети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" target="_blank">
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#" target="_blank">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" target="_blank">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип htmlacademy">
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.photo__title {
+  // width: 172px;
+  // margin: 0 auto;
+  height: 237px;
+
+  background-color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @include text (300, 24px, 33px, #FFFFFF);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.photo__subtitle {
+  margin: 0;
+
+  @include text (400, 14px, 30px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.photo__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}

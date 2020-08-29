@@ -1,0 +1,11 @@
+.contest__title {
+  height: 237px;
+
+  background-color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @include text (300, 24px, 33px, #FFFFFF);
+  // ($font-weight, $font-size, $line-height, $color)
+}

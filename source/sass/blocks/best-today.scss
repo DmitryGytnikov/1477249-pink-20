@@ -1,0 +1,35 @@
+.best-today_mark {
+  margin: 0;
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include text (700, 12px, 24px, #FFFFFF);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+}
+
+.best-today__author {
+  margin: 0;
+
+  @include text (700, 14px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.best-today__time {
+  @include text (300, 12px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+}
+
+.best-today__text {
+  margin: 0;
+
+  @include text (400, 14px, 24px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}

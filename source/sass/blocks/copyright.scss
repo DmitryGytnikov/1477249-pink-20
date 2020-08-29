@@ -1,0 +1,6 @@
+.copyright__text {
+  margin: 0;
+
+  @include text (400, 14px, 18px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
