@@ -1,1 +1,57 @@
-// Начните писать стили здесь
+// Fonts
+@import "font.scss";
+
+// Global
+@import "global.scss";
+
+// Миксины
+@import "mixins.scss";
+
+/*Скрытые заголовки и скрытые описания ссылок*/
+@import "visually-hidden.scss";
+
+// html
+@import "blocks/page.scss";
+
+// // header
+// @import "blocks/page-header.scss";
+// @import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+// // main
+// @import "blocks/page-main.scss";
+@import "blocks/title.scss";
+@import "blocks/download.scss";
+@import "blocks/advanteges.scss";
+@import "blocks/contest.scss";
+@import "blocks/photo.scss";
+@import "blocks/best-today.scss";
+@import "blocks/like-block.scss";
+@import "blocks/photo-block.scss";
+@import "blocks/like-box.scss";
+
+// // footer
+// @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+
+//  Все БЭМ-блоки
+
+// page
+
+// page-header
+// main-nav
+// site-list
+
+// page-main
+// title         contest     photo
+// download                  best-today
+// advanteges                like-block
+//                           photo-block
+//                           like-box
+
+
+// page-footer
+// social
+// copyright

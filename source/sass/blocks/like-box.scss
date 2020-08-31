@@ -1,0 +1,17 @@
+.like-box__btn {
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/heart1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.like-box__text {
+  @include text (400, 12px, 24px, #d22856);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+}

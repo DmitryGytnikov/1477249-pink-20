@@ -3,40 +3,41 @@
 <head>
   <meta charset="utf-8">
   <title>Конкурс. HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
   <!-- Добавить важные, ключевые слова и краткое описание -->
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
+        </a>
         <button class="main-nav__toggle" type="button">
-          <span class="visualli-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item  site-list__item--active">
-            <a>
+            <a class="site-list__link">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               HTML Academy
             </a>
           </li>
         </ul>
-        <a class="page-header__logo" href="index.html">
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Pink">
-        </a>
       </nav>
     </div>
   </header>
@@ -56,14 +57,20 @@
         <h2 class="visually-hidden">Ссылки на соцсети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" target="_blank">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" target="_blank">Мы в Ютубе</a>
-          </li>
+          <a class="social__link social__link--twitter" href="#" target="_blank">
+            <span class="visually-hidden">Мы в Твиттере</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" target="_blank">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" target="_blank">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">

@@ -1,0 +1,16 @@
+.title {
+  min-height: 733px;
+
+  background-color: #cccccc;
+  background-image:  url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 70px, 0 0;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.title__text {
+  margin: 0;
+
+  @include text (300, 24px, 24px*1.2, #FFFFFF);
+  // ($font-weight, $font-size, $line-height, $color)
+}
