@@ -1,7 +1,12 @@
 .page__body {
+  // От 320px мобильная версия
+  min-width: 320px; // появляется нижняя прокрутка
+
   margin: 0;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
   background-color: #ffffff;
 }
+
+
