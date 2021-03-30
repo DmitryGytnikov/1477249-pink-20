@@ -15,12 +15,14 @@
     height: 100%;
     background-color: #000000;
     opacity: 0.3;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
   }
 }
 
 .header__body {
   position: relative;
-  z-index: 2;
+  // z-index: 2; исп-вать в начале для отображения
 
   display: flex;
   justify-content: space-between;
@@ -30,19 +32,17 @@
 
 .header__logo {
   flex: 0 0 147px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
 }
 
 .header__burger {
   display: none;
-}
+  background: none;
 
-@media (max-width: 980px) {
-  .header__burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    background: red;
+  &:focus {
+    outline: none;
   }
 }
 
@@ -50,6 +50,8 @@
   list-style: none;
 
   display: flex;
+  position: relative;
+  z-index: 2;
 }
 
 .header__item {
@@ -82,5 +84,126 @@
   &:active {
     color: #ffffff;
     opacity: 0.3;
+  }
+}
+
+@media (max-width: 980px) {
+  body.lock {
+    overflow: hidden; //Запрет скролла при открытом меню
+  }
+
+  .header.active::before {
+    background-color: inherit;
+    border-bottom: 1px solid #000000;
+  }
+
+  .header__logo {
+    flex: 0 0 145px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+    // background: red;
+    z-index: 3;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: 10px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  .header__menu {
+    position: fixed;
+    // top: 0; Добавить в начале для отображения (до синхронизации с нажатием кнопки бургер)
+    top: -200%;
+    left: 0;
+    width: 100%;
+    // height: 100%;
+    overflow: auto; //! Не работает: скролл меню, если недостаточный вьюпорт
+    background-color: #283645;
+    padding: 110px 0 0 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+
+  .header__item {
+    margin: 0 0 1px 0;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    min-height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__link {
+    line-height: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    &:not([href]) {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .header__body {
+    min-height: 70px;
+  }
+
+  .header__logo {
+    flex: 0 0 74px;
+  }
+
+  .header__menu {
+    padding: 70px 0 0 0;
   }
 }
