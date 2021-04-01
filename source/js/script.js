@@ -8,8 +8,8 @@ let body = document.querySelector(`.page__body`);
 
 burger.addEventListener(`click`, function (evt) {
   // evt.preventDefault();
-  burger.classList.toggle(`active`);
-  headerMenu.classList.toggle(`active`);
-  header.classList.toggle(`active`);
+  burger.classList.toggle(`header__burger--active`);
+  headerMenu.classList.toggle(`header__burger--active`);
+  header.classList.toggle(`header__burger--active`);
   body.classList.toggle(`lock`);
 });

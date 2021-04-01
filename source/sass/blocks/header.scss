@@ -1,3 +1,8 @@
+// .header {
+//   outline: 5px solid rgba(0, 255, 0, 0.8);
+//   outline-offset: -5px;
+// }
+
 .header {
   position: fixed;
   width: 100%;
@@ -92,7 +97,7 @@
     overflow: hidden; //Запрет скролла при открытом меню
   }
 
-  .header.active::before {
+  .header.header__burger--active::before {
     background-color: inherit;
     border-bottom: 1px solid #000000;
   }
@@ -139,16 +144,16 @@
     bottom: 0;
   }
 
-  .header__burger.active span {
+  .header__burger.header__burger--active span {
     transform: scale(0);
   }
 
-  .header__burger.active::before {
+  .header__burger.header__burger--active::before {
     transform: rotate(45deg);
     top: 9px;
   }
 
-  .header__burger.active::after {
+  .header__burger.header__burger--active::after {
     transform: rotate(-45deg);
     top: 9px;
   }
@@ -166,7 +171,7 @@
     transition: all 0.3s ease 0s;
   }
 
-  .header__menu.active {
+  .header__menu.header__burger--active {
     top: 0;
   }
 

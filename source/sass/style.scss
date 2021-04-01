@@ -14,12 +14,8 @@
 @import "blocks/page.scss";
 
 // // header container.scss
-@import "blocks/wrapper.scss";
 @import "blocks/header.scss";
 @import "blocks/container.scss";
-@import "blocks/page-header.scss";// Убрать на form.html, index.html
-@import "blocks/main-nav.scss";
-@import "blocks/site-list.scss";// Убрать на form.html, index.html
 
 // // main
 @import "blocks/page-main.scss";
@@ -43,9 +39,10 @@
 
 // page
 
-// page-header
-// main-nav
-// site-list
+// page__body
+
+// header
+// container
 
 // page-main                 page-main
 // title         contest     photo
