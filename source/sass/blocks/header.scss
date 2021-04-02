@@ -149,13 +149,17 @@
   }
 
   .header__burger.header__burger--active::before {
+    width: 33px;
     transform: rotate(45deg);
-    top: 9px;
+    top: 10px;
+    left: 19px;
   }
 
   .header__burger.header__burger--active::after {
+    width: 33px;
     transform: rotate(-45deg);
-    top: 9px;
+    top: 10px;
+    left: 19px;
   }
 
   .header__menu {
@@ -191,7 +195,7 @@
   .header__link {
     line-height: 0;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
 
     &:not([href]) {
       border-bottom: none;
