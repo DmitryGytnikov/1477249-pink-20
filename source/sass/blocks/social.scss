@@ -1,5 +1,29 @@
 .social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  width: 178px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+
+.social__link {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+
+  &--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat 50%;
+  }
+
+  &--fb {
+    background: url("../img/icon-facebook.svg") no-repeat 50%;
+  }
+
+  &--youtube {
+    background: url("../img/icon-youtube.svg") no-repeat 50%;
+  }
 }

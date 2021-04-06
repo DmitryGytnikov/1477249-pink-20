@@ -1,6 +1,15 @@
-.copyright__text {
-  margin: 0;
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.copyright__text {
   @include text (400, 14px, 18px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+}
+
+.copyright__link {
+  display: block;
+  margin-left: 15px;
 }
