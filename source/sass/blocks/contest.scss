@@ -1,13 +1,39 @@
 .contest__title {
-  height: 237px;
-  margin: 0;
-  padding: 0;
+  background: #cccccc url("../img/bg-back-mobile@1x.jpg") 50% 0/cover no-repeat;
+}
 
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.contest__title-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 94px 0 44px 0;
 
   @include text (300, 24px, 33px, #FFFFFF);
   // ($font-weight, $font-size, $line-height, $color)
+}
+
+@media (min-width: 320px) {
+  .contest__title {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 660px) {
+  .contest__title-text {
+    padding: 176px 0 60px 0;
+    max-width: 520px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: 980px) {
+  .contest__title {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .contest__title-text {
+    padding: 169px 0 89px 0;
+    max-width: 760px;
+  }
 }
