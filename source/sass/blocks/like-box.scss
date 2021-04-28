@@ -1,3 +1,9 @@
+.like-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .like-box__btn {
   width: 13px;
   height: 12px;

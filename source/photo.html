@@ -63,8 +63,8 @@
       </div>
 
       <div class="best-today">
-        <p class="best-today__mark">Панорама дня</p>
         <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
+        <p class="best-today__mark">Панорама дня</p>
         <div class="page-main__wrapper">
           <h2 class="best-today__author">
             Анна<span class="best-today__time">(5 минут назад)</span>
@@ -77,87 +77,106 @@
         </div>
       </div>
 
-      <div class="page-main__wrapper">
-        <ul class="photo__list">
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Левон<span class="photo-block__time">(5 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:356</span>
+      <div class="container">
+
+        <ul class="photo__row">
+
+          <li class="photo__column">
+            <div class="photo-block"> <!-- Добавили, чтобы задать расстояние м-ду флекс-элементами через отрицательный марджин для <ul> и <li>  -->
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Левон<span class="photo-block__time">(5 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 356</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Антон<span class="photo-block__time">(12 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Соседи будут рады!</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:666</span>
+
+          <li class="photo__column">
+            <div class="photo-block">
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" width="300" height="400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Антон<span class="photo-block__time">(12 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Соседи будут рады!</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 656</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Борис<span class="photo-block__time">(20 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:215</span>
+
+          <li class="photo__column">
+            <div class="photo-block">
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" width="300" height="400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Борис<span class="photo-block__time">(20 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 215</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Сергей
-              <span class="photo-block__time">(25 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Самая кубанская в мире!</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:4</span>
+
+          <li class="photo__column">
+            <div class="photo-block">
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" width="300" height="400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Сергей<span class="photo-block__time">(25 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Самая кубанская в мире!</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 4</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Максим<span class="photo-block__time">(40 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Где снег-то?</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:150</span>
+
+          <li class="photo__column">
+            <div class="photo-block">
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" width="300" height="400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Максим<span class="photo-block__time">(40 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Где снег-то?</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 150</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-block">
-            <p class="photo-block__photo">
-              <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-            </p>
-            <h2 class="photo-block__author">
-              Надежда<span class="photo-block__time">(45 часов назад)</span>
-            </h2>
-            <p class="photo-block__text">Всем GM и взаимные лайки!</p>
-            <div class="photo-block___like like-box">
-              <button class="like-box__btn" type="button" aria-label="Нравится"></button>
-              <span class="like-box__text">Нравится:2560</span>
+
+          <li class="photo__column">
+            <div class="photo-block">
+              <p class="photo-block__photo">
+                <img src="https://via.placeholder.com/300x400" width="300" height="400" alt="Фото">
+              </p>
+              <h2 class="photo-block__author">
+                Надежда<span class="photo-block__time">(45 часов назад)</span>
+              </h2>
+              <p class="photo-block__text">Всем GM и взаимные лайки!</p>
+              <div class="photo-block___like like-box">
+                <span class="like-box__text">Нравится: 2560</span>
+                <button class="like-box__btn" type="button" aria-label="Нравится"></button>
+              </div>
             </div>
           </li>
+
         </ul>
       </div>
     </section>

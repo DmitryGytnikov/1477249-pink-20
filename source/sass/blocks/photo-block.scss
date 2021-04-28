@@ -1,23 +1,57 @@
+.photo-block {
+  background-color: #f2f2f2;
+
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .photo-block__photo {
-  margin: 0;
+  max-width: 300px;
+
+  @media (max-width: 484px) {
+    max-width: 280px;
+  }
 }
 
 .photo-block__author {
-  margin: 0;
-
   @include text (700, 14px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+
+  margin-top: 15px;
+  padding: 0 27px;
+
+  @media (max-width: 484px) {
+    padding: 0 17px;
+  }
 }
 
 .photo-block__time {
   @include text (300, 12px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
   text-transform: uppercase;
+
+  margin-left: 5px;
 }
 
 .photo-block__text {
-  margin: 0;
-
   @include text (400, 14px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+
+  margin-bottom: 10px;
+  padding: 0 27px;
+  flex: 1 1 auto;
+
+  @media (max-width: 484px) {
+    padding: 0 17px;
+  }
+}
+
+.photo-block___like {
+  padding: 0 27px;
+
+  @media (max-width: 484px) {
+    padding: 0 17px;
+  }
 }

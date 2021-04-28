@@ -66,6 +66,32 @@
 
 // //////////////////////////////////////////////////////////// //
 
-// .photo__list {
+.photo__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
 
-// }
+  @media (max-width: 720px) {
+    justify-content: space-around;
+  }
+}
+
+.photo__column {
+  flex: 0 1 33.333%;
+  padding: 0 10px;
+  margin-bottom: 54px;
+  display: flex;
+
+  @media (max-width: 720px) {
+    flex: 0 1 320px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 659px) {
+    flex: 0 1 50%;
+  }
+
+  @media (max-width: 484px) {
+    flex: 0 1 300px;
+  }
+}
