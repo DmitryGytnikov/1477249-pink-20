@@ -9,9 +9,15 @@
 
 .photo-block__photo {
   max-width: 300px;
+  overflow: hidden;
+
+  @media (max-width: 720px) {
+    max-height: 300px;
+  }
 
   @media (max-width: 484px) {
     max-width: 280px;
+    max-height: 180px;
   }
 }
 

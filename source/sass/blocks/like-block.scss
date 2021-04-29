@@ -1,3 +1,14 @@
+.like-block {
+  width: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 484px) {
+    width: auto;
+  }
+}
+
 .like-block__btn {
   width: 13px;
   height: 12px;

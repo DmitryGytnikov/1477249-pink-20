@@ -1,35 +1,85 @@
-.best-today__mark {
-  margin: 0;
-  box-sizing: border-box;
-  width: 140px;
-  height: 36px;
-  background-color: #d22856;
+.best-today {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.best-today__mark {
+  position: absolute;
+  top: 54px;
+  right: 130px;
+
+  display: inline-block;
+  padding: 6px 20px 6px 20px;
+  background-color: #d22856;
 
   @include text (700, 12px, 24px, #FFFFFF);
   // ($font-weight, $font-size, $line-height, $color)
   text-transform: uppercase;
+
+  @media (max-width: 979px) {
+    top: 57px;
+    right: 20px;
+  }
+
+  @media (max-width: 659px) {
+    top: 0;
+  }
+}
+
+.best-today__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #f2f2f2;
+
+  margin-top: -5px;
+  padding: 24px 30px 24px 30px;
+
+  @media (max-width: 484px) {
+    width: 280px;
+    margin: 0 auto;
+
+    padding: 15px 17px 20px 17px;
+  }
 }
 
 .best-today__author {
-  margin: 0;
+  flex: 1 1 50%;
 
   @include text (700, 14px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+
+  @media (max-width: 484px) {
+    order: 0;
+    flex: 1 1 100%;
+  }
 }
 
 .best-today__time {
   @include text (300, 12px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+
   text-transform: uppercase;
+  margin-left: 3px;
+}
+
+.best-today__like {
+  @media (max-width: 484px) {
+    order: 2;
+    flex: 1 1 100%;
+  }
 }
 
 .best-today__text {
-  margin: 0;
+  flex: 1 1 50%;
 
   @include text (400, 14px, 24px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
+
+  @media (max-width: 484px) {
+    order: 1;
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
 }
