@@ -1,3 +1,5 @@
+@import "../../node_modules/normalize.css/normalize";
+
 // Fonts
 @import "font.scss";
 
@@ -9,6 +11,8 @@
 
 /*Скрытые заголовки и скрытые описания ссылок*/
 @import "visually-hidden.scss";
+
+// @import "/blocks/*";
 
 // html
 @import "blocks/page.scss";
@@ -34,25 +38,3 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
-
-//  Все БЭМ-блоки !! изменить
-
-// page
-
-// page__body
-
-// header
-// container
-
-// page-main                 page-main
-// title         contest     photo
-// download                  best-today
-// advanteges                like-block
-//                           photo-block
-//                           like-box
-
-
-// page-footer
-// social
-// copyright
