@@ -8,3 +8,7 @@
 
 /*@include text ();*/
 // ($font-weight, $font-size, $line-height, $color)
+
+@mixin animation {
+  transition: all 0.2s ease;
+}

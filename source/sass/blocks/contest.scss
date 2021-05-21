@@ -23,6 +23,8 @@
   margin: 0 auto;
   text-align: center;
 
+  margin-bottom: 35px;
+
   @include text (400, 14px, 30px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
 }
