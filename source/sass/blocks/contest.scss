@@ -4,6 +4,8 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
+
+  margin-bottom: 50px;
 }
 
 .contest__title-text {
@@ -13,6 +15,15 @@
   padding: 94px 0 44px 0;
 
   @include text (300, 24px, 33px, #FFFFFF);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.contest__text {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include text (400, 14px, 30px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
 }
 
@@ -33,6 +44,11 @@
     font-size: 50px;
     line-height: 68px;
   }
+
+  .contest__text {
+    font-size: 18px;
+    width: 490px;
+  }
 }
 
 @media (min-width: 980px) {
@@ -47,5 +63,9 @@
   .contest__title-text {
     padding: 169px 0 89px 0;
     max-width: 760px;
+  }
+
+  .contest__text {
+    width: 760px;
   }
 }
