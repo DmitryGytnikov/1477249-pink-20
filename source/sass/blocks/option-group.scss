@@ -8,7 +8,7 @@
   }
 
   &--radio {
-    //
+    padding-bottom: 42px;
   }
 }
 
@@ -112,4 +112,26 @@
 .option-group__input[type="radio"]:focus + .option-group__element {
   @include animation;
   border-color: #d22856;
+}
+
+
+@media (min-width: 660px) {
+  .option-group {
+    &--checkbox {
+      padding-bottom: 48px;
+    }
+
+    &--radio {
+      padding-left: 40px;
+      padding-bottom: 54px;
+    }
+  }
+
+  .option-group__input[type="radio"] ~ .option-group__label {
+    padding-left: 59px;
+  }
+}
+
+@media (min-width: 980px) {
+  //
 }

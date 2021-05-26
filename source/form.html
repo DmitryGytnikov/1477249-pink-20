@@ -68,16 +68,16 @@
 
             <div class="form__box form__box--top">
               <div class="container">
-                <div class="form__item">
-                  <label class="form__label" for="last-name">Фамилия:</label>
+                <div class="form__item form__item--top">
+                  <label class="form__label form__label--top" for="last-name">Фамилия:</label>
                   <input class="form__input js-last-name" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
                 </div>
-                <div class="form__item">
-                  <label class="form__label" for="first-name">Имя:</label>
+                <div class="form__item  form__item--top">
+                  <label class="form__label form__label--top" for="first-name">Имя:</label>
                   <input class="form__input js-first-name" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
                 </div>
-                <div class="form__item">
-                  <label class="form__label" for="middle-name">Отчество:</label>
+                <div class="form__item  form__item--top">
+                  <label class="form__label  form__label--top" for="middle-name">Отчество:</label>
                   <input class="form__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
                 </div>
               </div>
@@ -167,8 +167,10 @@
 
             <div class="form__box form__box--submit">
               <div class="container">
-                <button class="form__submit-btn" type="submit">Отправить форму</button>
-                <p class="form__note"><span class="form__note form__note--pink">*</span> — обязательные<span class="form__note form__note--hidden">&#160;для заполнения</span>&#160;поля</p>
+                <div class="form__box--row">
+                  <button class="form__submit-btn" type="submit">Отправить форму</button>
+                  <p class="form__note"><span class="form__note form__note--pink">*</span> — обязательные<span class="form__note form__note--hidden">&#160;для заполнения</span>&#160;поля</p>
+                </div>
               </div>
             </div>
 
