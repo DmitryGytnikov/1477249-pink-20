@@ -224,9 +224,10 @@
 
         <div class="container">
 
-          <div class="editor__row">
+          <form class="editor__row" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" method="get">
 
             <div class="editor__img">
+              <input type="file" name="image">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
@@ -234,7 +235,7 @@
               </picture>
             </div>
 
-            <form class="editor__form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="editor__form">
 
               <div class="editor__toggles">
 
@@ -270,9 +271,13 @@
 
               <button class="editor__btn editor__btn--submit" type="submit">Запостить</button>
               <button class="editor__btn editor__btn--reset" type="reset">Отмена</button>
-            </form>
 
-          </div>
+            </div>
+
+          </form>
+
+
+
 
         </div>
       </div>
