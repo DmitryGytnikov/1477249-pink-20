@@ -84,7 +84,7 @@
 @media (min-width: 660px) {
   .download {
     background-color: transparent;
-    margin-left: -310px;
+    width: 300px;
   }
 
   .download__btn {
@@ -104,10 +104,6 @@
 }
 
 @media (min-width: 980px) {
-  .download {
-    margin-left: -630px;
-  }
-
   .download__btn {
     margin-bottom: 67px;
   }

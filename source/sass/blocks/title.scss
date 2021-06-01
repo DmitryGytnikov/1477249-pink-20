@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 321px) {
   .title {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
@@ -45,11 +45,16 @@
     line-height: 48px;
 
     &::before {
-      width: 660px;
+      width: 650px;
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       left: -52px;
     }
+  }
+
+  .title__download--container {
+    width: 620px;
+    margin: 0 auto;
   }
 
   .title__download {
@@ -65,22 +70,27 @@
   }
 
   .title_container {
-    width: auto;
-    max-width: 980px;
+    max-width: 940px;
+    width: 100%;
   }
 
   .title__text {
-    padding: 216px 0 433px 34px;
+    padding: 216px 0 433px 17px;
     font-size: 50px;
     line-height: 68px;
     max-width: 300px;
 
     &::before {
-      width: 1050px;
+      width: 930px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       left: 35px;
     }
+  }
+
+  .title__download--container {
+    max-width: 935px;
+    width: 100%;
   }
 
   .title__download {
