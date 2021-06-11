@@ -1,0 +1,95 @@
+.special {
+  display: none;
+
+  @include tablet {
+    display: block;
+    padding-top: 54px;
+  }
+
+  @include desktop {
+    background-color: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-bottom: 67px;
+  }
+}
+
+.special__box {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 704px) {
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    justify-content: start;
+  }
+}
+
+.special__img {
+  height: 276px;
+  flex-basis: 238px;
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+
+  @include desktop {
+    height: 345px;
+    flex-basis: 298px;
+    margin-right: 71px;
+  }
+}
+
+.special__info {
+  flex-basis: 310px;
+
+  @include desktop {
+    flex-basis: 534px;
+  }
+}
+
+.special__title {
+  @include tablet {
+    @include text (700, 30px, 36px, #000000);
+    // ($font-weight, $font-size, $line-height, $color)
+    margin-bottom: 10px;
+  }
+
+  @include desktop {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.special__text {
+  @include tablet {
+    @include text (400, 14px, 24px, #283645);
+    // ($font-weight, $font-size, $line-height, $color)
+    margin-bottom: 9px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 21px;
+  }
+}
+
+.special__link {
+  @include tablet {
+    @include text (400, 14px, 24px, #D22856);
+    // ($font-weight, $font-size, $line-height, $color)
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
