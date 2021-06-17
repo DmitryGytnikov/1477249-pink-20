@@ -1,0 +1,73 @@
+.feedbacks {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding-top: 109px;
+    padding-bottom: 55px;
+  }
+
+  @include desktop {
+    padding-top: 193px;
+    padding-bottom: 41px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 72px;
+    background-size: 79px 63px;
+  }
+}
+
+.feedbacks__text {
+  @include text (400, 14px, 30px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+  order: 2;
+
+  @include tablet {
+    font-size: 18px;
+    order: 1;
+    margin-bottom: 35px;
+  }
+
+  @include desktop {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.feedbacks__author {
+  @include text (700, 18px, 30px, #000000);
+  // ($font-weight, $font-size, $line-height, $color)
+  order: 1;
+  margin-bottom: 13px;
+
+  @include tablet {
+    font-size: 20px;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-style: 24px;
+  }
+}
+
+.feedbacks__description {
+  display: none;
+
+  @include tablet {
+    display: block;
+
+    @include text (400, 14px, 30px, #283645);
+    // ($font-weight, $font-size, $line-height, $color)
+    order: 3;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
