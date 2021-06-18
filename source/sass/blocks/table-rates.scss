@@ -1,0 +1,177 @@
+.table-rates {
+  // width: 840px;
+  border-collapse: collapse;
+  // background-color: red;
+
+  @include tablet {
+    // width: 621px;
+  }
+
+  @include desktop {
+    width: 944px;
+  }
+}
+
+.table-rates__th {
+background-color: #283645;
+
+
+  // width: 280px;
+  // height: 95px;
+  // border: 2px solid $border-white;
+  // border-radius: 1px;
+  // border-top: none;
+  // border-bottom: none;
+  // background-color: $secondary;
+  // color: $white;
+  // padding: 12px 10px 29px;
+
+  // @include tablet {
+  //   width: 152px;
+  //   height: 79px;
+  //   padding: 9px 16px;
+  // }
+
+  // @include desktop {
+  //   height: 98px;
+  // }
+
+  // &:nth-child(2) {
+  //   border-radius: 2px 0 0 0;
+  //   border-left: none;
+  // }
+
+  // &:nth-child(4) {
+  //   border-radius: 0 2px 0 0;
+  //   border-right: none;
+  // }
+
+  // &--hit {
+  //   position: relative;
+  // }
+
+  // &--hit::before {
+  //   content: "";
+  //   width: 74px;
+  //   height: 74px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-image: url("../img/bg-hit.svg");
+  //   background-repeat: no-repeat;
+
+  //   @include tablet {
+  //     background-size: 57px 57px;
+  //   }
+
+  //   @include desktop {
+  //     background-size: 74px 74px;
+  //   }
+  // }
+
+  // &--hit::after {
+  //   content: "Хит";
+  //   position: absolute;
+  //   top: 15px;
+  //   left: 14px;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   transform: rotate(-45deg);
+
+  //   @include tablet {
+  //     top: 10px;
+  //     left: 7px;
+  //   }
+
+  //   @include desktop {
+  //     top: 15px;
+  //     left: 15px;
+  //   }
+  // }
+}
+
+.table-rates__td-title {
+  width: 235px;
+  height: 61px;
+  border: 2px solid #e5e5e5;
+  padding: 0 22px 0 22px;
+}
+
+.table-rates__td-info {
+  width: 235px;
+  height: 61px;
+  border: 2px solid #e5e5e5;
+  position: relative;
+}
+
+.table-rates__option-title {
+  @include text (400, 18px, 30px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+}
+
+.table-rates__option {
+  @include text (400, 14px, 30px, #283645);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.table-rates__status--on {
+  content: "";
+  width: 31px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 16px);
+
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.table-rates__status--off {
+  content: "";
+  width: 27px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 14px);
+
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.table-rates__name {
+  @include text (700, 18px, 30px, #ffffff);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+
+}
+
+.table-rates__price {
+  @include text (300, 24px, 30px, #ffffff);
+  // ($font-weight, $font-size, $line-height, $color)
+  text-transform: uppercase;
+
+}
+
+.table-rates__title {
+  display: none;
+
+  @include tablet {
+    display: table-cell;
+    background-color: transparent;
+  }
+}
+
+
