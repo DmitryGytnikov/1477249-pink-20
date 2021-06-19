@@ -1,5 +1,22 @@
 .rates {
+  display: none;
 
+  @include tablet {
+    display: block;
+    background-image: url("../img/grey-background2-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1200px 534px;
+    padding-top: 125px;
+    padding-bottom: 70px;
+  }
+
+  @include desktop {
+    padding-top: 175px;
+    padding-bottom: 86px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .rates__table {

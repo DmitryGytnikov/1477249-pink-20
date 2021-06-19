@@ -5,6 +5,8 @@
   <meta name="viewport"
   content="width=device-width,initial-scale=1"> <!-- Ширина сеточного вьюпорта (контента) должна быть такой же как ширина устройства (т.е. визуального вьюпорта - отображаемой области). Работает вместе с @media-->
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
@@ -174,25 +176,35 @@
     <div class="container">
       <div class="feedbacks">
 
-       <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
 
-        <blockquote class="feedbacks__text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </blockquote>
-        <p class="feedbacks__author">Николай Петров</p>
-        <p class="feedbacks__description">25 лет, водитель трамвая</p>
+        <ul class="feedbacks-slider">
 
-        <blockquote class="feedbacks__text">
-          «Это приложение перевернуло мир Николая Петрова и позволило ему по-новому взглянуть на привычные серые вещи! А еще он познакомился со мной в комментариях к выложенной фотографии!»
-        </blockquote>
-        <p class="feedbacks__author">Зина Петрова</p>
-        <p class="feedbacks__description">20 лет, жена водителя трамвая</p>
+          <li class="feedbacks-slider__item">
+            <blockquote class="feedbacks__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
+            <p class="feedbacks__author">Николай Петров</p>
+            <p class="feedbacks__description">25 лет, водитель трамвая</p>
+          </li>
 
-        <blockquote class="feedbacks__text">
-          «Это приложение перевернуло мир папы и позволило по-новому взглянуть на привычные серые вещи! А еще он познакомился с моей мамой в комментариях к выложенной фотографии!»
-        </blockquote>
-        <p class="feedbacks__author">Авдотья Петрова</p>
-        <p class="feedbacks__description">5 лет, дочь водителя трамвая</p>
+          <li class="feedbacks-slider__item">
+            <blockquote class="feedbacks__text">
+              «Это приложение перевернуло мир Николая Петрова и позволило ему по-новому взглянуть на привычные серые вещи! А еще он познакомился со мной в комментариях к выложенной фотографии!»
+            </blockquote>
+            <p class="feedbacks__author">Зина Петрова</p>
+            <p class="feedbacks__description">20 лет, жена водителя трамвая</p>
+          </li>
+
+          <li class="feedbacks-slider__item">
+            <blockquote class="feedbacks__text">
+              «Это приложение перевернуло мир папы и позволило по-новому взглянуть на привычные серые вещи! А еще он познакомился с моей мамой в комментариях к выложенной фотографии!»
+            </blockquote>
+            <p class="feedbacks__author">Авдотья Петрова</p>
+            <p class="feedbacks__description">5 лет, дочь водителя трамвая</p>
+          </li>
+
+        </ul>
 
       </div>
     </div>
@@ -203,12 +215,12 @@
 
         <table class="rates__table table-rates">
           <tr class="table-rates__tr">
-            <th class="table-rates__th table-rates__title table-rates__title--top"></th>
+            <th class="table-rates__th table-rates__title"></th>
             <th class="table-rates__th">
               <div class="table-rates__name">База</div>
               <span class="table-rates__price">1,99 USD</span>
             </th>
-            <th class="table-rates__th table-rates__th--hit">
+            <th class="table-rates__th">
               <div class="table-rates__name">Стандарт</div>
               <span class="table-rates__price">3,99 USD</span>
             </th>
@@ -218,7 +230,7 @@
             </th>
           </tr>
           <tr class="table-rates__tr">
-            <td class="table-rates__td-title">
+            <td class="table-rates__td-title table-rates__title">
               <span class="table-rates__option-title">Розовый фильтр</span>
             </td>
             <td class="table-rates__td-info">
@@ -235,7 +247,7 @@
             </td>
           </tr>
           <tr class="table-rates__tr">
-            <td class="table-rates__td-title">
+            <td class="table-rates__td-title table-rates__title">
               <span class="table-rates__option-title">Смайлики</span>
             </td>
             <td class="table-rates__td-info">
@@ -252,7 +264,7 @@
             </td>
           </tr>
           <tr class="table-rates__tr">
-            <td class="table-rates__td-title">
+            <td class="table-rates__td-title table-rates__title">
               <span class="table-rates__option-title">Комментарии</span>
             </td>
             <td class="table-rates__td-info">
@@ -346,6 +358,9 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>

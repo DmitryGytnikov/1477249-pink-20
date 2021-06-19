@@ -13,3 +13,9 @@ burger.addEventListener(`click`, function (evt) {
   header.classList.toggle(`header__burger--active`);
   body.classList.toggle(`lock`);
 });
+
+$(function(){
+  $('.feedbacks-slider').slick({
+
+  });
+});
