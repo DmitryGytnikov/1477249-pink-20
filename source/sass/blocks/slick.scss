@@ -27,7 +27,11 @@
 .slick-dots {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 18px;
+
+  @include tablet {
+    margin-top: 30px;
+  }
 }
 
 .slick-dots li {
