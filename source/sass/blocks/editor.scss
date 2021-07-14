@@ -1,3 +1,15 @@
+.editor {
+  padding-top: 23px;
+
+  @include tablet {
+    padding-top: 43px;
+  }
+
+  @media (min-width: 704px) {
+    padding-top: 13px;
+  }
+}
+
 .editor__title {
   @include text (400, 14px, 30px, #283645);
   // ($font-weight, $font-size, $line-height, $color)

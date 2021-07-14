@@ -14,7 +14,7 @@
 .contacts__subtitle {
   @include text (300, 24px, 29px, #283645);
   // ($font-weight, $font-size, $line-height, $color)
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .contacts__title {
