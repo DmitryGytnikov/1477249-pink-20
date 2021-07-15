@@ -19,7 +19,7 @@
   <header class="header">
     <div class="container">
       <div class="header__body">  <!-- флекс-контейнер -->
-        <a class="header__logo"  href="index.html">
+        <a aria-label="На главную страницу" class="header__logo"  href="index.html">
           <picture>
             <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -78,12 +78,12 @@
           <source media="(min-width: 321px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
           <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня">
         </picture>
-        <p class="best-today__mark">Панорама дня</p>
+        <h2 class="best-today__mark">Панорама дня</h2>
         <div class="container">
           <div class="best-today__container">
-            <h2 class="best-today__author">
+            <h3 class="best-today__author">
               Анна<span class="best-today__time">(5 минут назад)</span>
-            </h2>
+            </h3>
             <div class="best-today__like like-block">
               <span class="like-block__text">Нравится:215</span>
               <button class="like-block__btn" type="button" aria-label="Нравится"></button>
@@ -106,9 +106,9 @@
                   <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
               </p>
-              <h2 class="photo-block__author">
+              <h3 class="photo-block__author">
                 Левон<span class="photo-block__time">(5 часов назад)</span>
-              </h2>
+              </h3>
               <p class="photo-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="photo-block___like like-box">
                 <span class="like-box__text">Нравится: 356</span>
@@ -126,9 +126,9 @@
                   <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
               </p>
-              <h2 class="photo-block__author">
+              <h3 class="photo-block__author">
                 Антон<span class="photo-block__time">(12 часов назад)</span>
-              </h2>
+              </h3>
               <p class="photo-block__text">Соседи будут рады!</p>
               <div class="photo-block___like like-box">
                 <span class="like-box__text">Нравится: 656</span>
@@ -146,9 +146,9 @@
                   <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
               </p>
-              <h2 class="photo-block__author">
+              <h3 class="photo-block__author">
                 Борис<span class="photo-block__time">(20 часов назад)</span>
-              </h2>
+              </h3>
               <p class="photo-block__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="photo-block___like like-box">
                 <span class="like-box__text">Нравится: 215</span>
@@ -166,9 +166,9 @@
                   <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
               </p>
-              <h2 class="photo-block__author">
+              <h3 class="photo-block__author">
                 Сергей<span class="photo-block__time">(25 часов назад)</span>
-              </h2>
+              </h3>
               <p class="photo-block__text">Самая кубанская в мире!</p>
               <div class="photo-block___like like-box">
                 <span class="like-box__text">Нравится: 4</span>
@@ -186,9 +186,9 @@
                   <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото">
                 </picture>
               </p>
-              <h2 class="photo-block__author">
+              <h3 class="photo-block__author">
                 Максим<span class="photo-block__time">(40 часов назад)</span>
-              </h2>
+              </h3>
               <p class="photo-block__text">Где снег-то?</p>
               <div class="photo-block___like like-box">
                 <span class="like-box__text">Нравится: 150</span>
@@ -230,10 +230,10 @@
 
         <div class="container">
 
-          <form class="editor__row" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" method="get">
+          <form class="editor__row" aria-label="Форма для загрузки своего фото" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" method="get">
 
             <div class="editor__img">
-              <input type="file" name="image">
+              <input aria-label="Поле для загрузки своего фото" type="file" name="image">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
@@ -247,20 +247,20 @@
 
                 <div class="editor__range-labels">
                   <label class="editor__label editor__label--crop editor__label--active" for="crop">
-                    <svg x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg aria-label="Обрезать" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
                       <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
                   </label>
                   <label class="editor__label editor__label--fill" for="fill">
-                    <svg id="Layer_1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg aria-label="Насыщенность" id="Layer_1" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
                       <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                       <rect y="40" width="48" height="3"/>
                     </svg>
                   </label>
                   <label class="editor__label editor__label--contrast" for="contrast">
-                    <svg x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92">
+                    <svg aria-label="Яркость" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92">
                       <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                     </svg>
@@ -268,9 +268,9 @@
                 </div>
 
                 <div class="editor__range-inputs">
-                  <input class="editor__input-range editor__input-range--active" id="crop" name="crop" type="range" min="0" max="100" step="1" tabindex="0">
-                  <input class="editor__input-range" id="fill" name="fill" type="range" min="0" max="100" step="1">
-                  <input class="editor__input-range" id="contrast" name="contrast" type="range" min="0" max="100" step="1">
+                  <input class="editor__input-range editor__input-range--active" aria-label="Ползунок Обрезать" id="crop" name="crop" type="range" min="0" max="100" step="1" tabindex="0">
+                  <input class="editor__input-range" id="fill" aria-label="Ползунок Насыщенность" name="fill" type="range" min="0" max="100" step="1">
+                  <input class="editor__input-range" aria-label="Ползунок Яркость" id="contrast" name="contrast" type="range" min="0" max="100" step="1">
                 </div>
 
               </div>
@@ -295,7 +295,7 @@
     <div class="container">
       <div class="footer__body">
         <a class="footer__logo" href="index.html">
-          <svg width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <svg aria-label="Логотип PINC" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -329,7 +329,7 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-label="Логотип HTML-академии" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
             </svg>
           </a>
