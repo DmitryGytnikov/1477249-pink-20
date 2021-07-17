@@ -59,6 +59,10 @@
     left: 0;
     z-index: 2;
     cursor: pointer;
+    // display: none;
+    // padding-inline: 0;
+    // line-height: 0;
+    opacity: 0;
 
     &::-webkit-file-upload-button {
       display: none;
