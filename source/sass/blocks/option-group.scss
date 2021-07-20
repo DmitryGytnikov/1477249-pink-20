@@ -58,8 +58,9 @@
   outline: none;
   cursor: pointer;
 
+  @include animation;
+
   &:hover {
-    @include animation;
     border-color: #283645;
   }
 
@@ -68,15 +69,20 @@
   }
 }
 
-.option-group__input[type="checkbox"]:checked ~ .option-group__element {
-  background-image: url("../img/icon-checked.svg");
-  background-repeat: no-repeat;
-  background-position: 7px 9px;
+.option-group__input[type="checkbox"]:focus + .option-group__element {
+  border-color: #d22856;
 }
 
-.option-group__input[type="checkbox"]:focus + .option-group__element {
-  @include animation;
-  border-color: #d22856;
+.option-group__input[type="checkbox"]:checked ~ .option-group__element::before {
+  content: "";
+  top: 9px;
+  left: 7px;
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-checked.svg");
+  background-repeat: no-repeat;
+  // background-position: 7px 9px;
 }
 
 .option-group__input[type="radio"] ~ .option-group__element {
@@ -91,8 +97,9 @@
   outline: none;
   cursor: pointer;
 
+  @include animation;
+
   &:hover {
-    @include animation;
     border-color: #283645;
   }
 
@@ -101,7 +108,13 @@
   }
 }
 
-.option-group__input[type="radio"]:checked ~ .option-group__element {
+.option-group__input[type="radio"]:checked ~ .option-group__element::before {
+  content: "";
+  top: 11px;
+  left: 11px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-size: 15px;

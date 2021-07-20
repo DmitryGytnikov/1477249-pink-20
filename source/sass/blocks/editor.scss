@@ -151,10 +151,11 @@
     border-radius: 50%;
     cursor: pointer;
 
+    @include animation;
+
     &:hover,
     &:focus,
     &:active {
-      transition: all 0.2s ease;
       background-color: #d22856;
     }
   }
@@ -178,6 +179,8 @@
     padding: 15px 0 16px;
     margin-bottom: 12px;
 
+    @include animation;
+
     &:hover,
     &:focus {
       transition: all 0.2s ease;
@@ -195,6 +198,8 @@
     color: #283645;
     opacity: 0.1;
     padding: 16px 0 15px;
+
+    @include animation;
 
     &:hover,
     &:focus {

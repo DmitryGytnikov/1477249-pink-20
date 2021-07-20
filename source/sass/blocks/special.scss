@@ -86,6 +86,8 @@
     @include text (400, 14px, 24px, #D22856);
     // ($font-weight, $font-size, $line-height, $color)
     text-decoration: underline;
+
+    @include animation;
   }
 
   @include desktop {

@@ -12,4 +12,17 @@
 .copyright__link {
   display: block;
   margin-left: 15px;
+
+  & path {
+    @include animation;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #283645;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }

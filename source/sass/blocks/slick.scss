@@ -24,6 +24,10 @@
   }
 }
 
+.slick-arrow {
+  @include animation;
+}
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -44,24 +48,27 @@
 }
 
 .slick-dots button {
-  // position: relative;
   font-size: 0;
   border: none;
   padding: 0;
-  // margin: 0 10px;
-  background-color: #9299a1;
-  // opacity: 0.3;
+  background-color: #283645;
+  opacity: 0.3;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  // z-index: 3;
   cursor: pointer;
+
+  @include animation;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
-
-// .slick-active {
-//   position: relative;
-// }
-
 
 .slick-active button {
   background-color: transparent;
@@ -70,15 +77,3 @@
   width: 12px;
   height: 12px;
 }
-
-// .slick-active::before {
-//   content: "";
-//   position: absolute;
-//   background-color: #283645;
-//   width: 12px;
-//   height: 12px;
-//   border-radius: 50%;
-//   left: -3px;
-//   bottom: -3px;
-
-// }

@@ -60,8 +60,6 @@
 }
 
 .header__item {
-  // background: #283645;
-  // box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   margin: 0 0 0 80px;
 }
 
@@ -71,6 +69,8 @@
   @include text (400, 18px, 18px, #ffffff);
   // ($font-weight, $font-size, $line-height, $color)
   // text-transform: uppercase;
+
+  @include animation;
 
   &:not([href]) {
     border-bottom: 2px solid #ffffff;
@@ -82,11 +82,6 @@
   }
 
   &:hover[href]:active {
-    color: #ffffff;
-    opacity: 0.3;
-  }
-
-  &:active {
     color: #ffffff;
     opacity: 0.3;
   }
@@ -122,7 +117,8 @@
     width: 100%;
     height: 4px;
     top: 10px;
-    transition: all 0.3s ease 0s;
+
+    @include animation;
   }
 
   .header__burger::before,
@@ -133,7 +129,8 @@
     width: 100%;
     height: 4px;
     left: 0;
-    transition: all 0.3s ease 0s;
+
+    @include animation;
   }
 
   .header__burger::before {
@@ -142,6 +139,22 @@
 
   .header__burger::after {
     bottom: 0;
+  }
+
+
+  .header__burger:hover span,
+  .header__burger:focus span,
+  .header__burger:hover::before,
+  .header__burger:focus::before,
+  .header__burger:hover::after,
+  .header__burger:focus::after {
+    background-color: #d22856;
+  }
+
+  .header__burger:active span,
+  .header__burger:active::before,
+  .header__burger:active::after {
+    opacity: 0.3;
   }
 
   .header__burger.header__burger--active span {

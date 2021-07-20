@@ -64,6 +64,7 @@
   font-style: normal;
 
   @include text (400, 18px, 30px, #283645);
+  @include animation;
 
   &::placeholder {
     font-family: inherit;
@@ -73,7 +74,6 @@
   }
 
   &:hover {
-    @include animation;
     border-color: #283645;
   }
 
@@ -122,12 +122,14 @@
   outline: none;
   padding: 13px 20px 34px;
 
+  @include animation;
+
   &::placeholder {
     color: #283645;
   }
 
   &:hover {
-    @include animation;
+
     border-color: #283645;
   }
 
@@ -153,9 +155,10 @@
   padding: 21px 10px 22px 10px;
   margin-bottom: 34px;
 
+  @include animation;
+
   &:hover,
   &:focus {
-    @include animation;
     background-color: #1c9b5e;
   }
 
