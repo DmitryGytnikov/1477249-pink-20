@@ -25,7 +25,18 @@
 }
 
 .slick-arrow {
+  opacity: 0.6;
+
   @include animation;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slick-dots {

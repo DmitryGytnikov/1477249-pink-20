@@ -88,6 +88,15 @@
     text-decoration: underline;
 
     @include animation;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   @include desktop {

@@ -59,9 +59,6 @@
     left: 0;
     z-index: 2;
     cursor: pointer;
-    // display: none;
-    // padding-inline: 0;
-    // line-height: 0;
     opacity: 0;
 
     &::-webkit-file-upload-button {
@@ -368,8 +365,6 @@
     width: 410px;
     position: relative;
     padding-bottom: 129px;
-
-    // align-content: stretch;
   }
 
   .editor__range-labels {
